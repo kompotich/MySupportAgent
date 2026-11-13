@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Instructions\MainAgent.md" LogicalName="MySupportAgent.Core.Instructions.MainAgent.md" />
+    <EmbeddedResource Include="Instructions\ResumeAgent.md" LogicalName="MySupportAgent.Core.Instructions.ResumeAgent.md" />
+    <EmbeddedResource Include="Instructions\QuickNoteAgent.md" LogicalName="MySupportAgent.Core.Instructions.QuickNoteAgent.md" />
+    <EmbeddedResource Include="Instructions\HhAgent.md" LogicalName="MySupportAgent.Core.Instructions.HhAgent.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.13.1" />
+    <PackageReference Include="Mapster" Version="10.0.14" />
+    <PackageReference Include="Microsoft.Agents.AI" Version="1.28.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.10" />
+    <PackageReference Include="PdfPig" Version="0.1.16" />
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.12" />
+    <PackageReference Include="OllamaSharp" Version="5.5.2" />
+  </ItemGroup>
+
+</Project>
